@@ -16,7 +16,7 @@ public class Samosa {
 	}
 
 	public void setPrice(double price) {
-		System.out.println("set price");
+		System.out.println("set Samosa price");
 		this.price = price;
 	}
 
@@ -27,10 +27,10 @@ public class Samosa {
 	
 	
 	public void init() {
-		System.out.println("inside init method");
+		System.out.println("inside Samosa init method");
 	}
 	
 	public void destroy() {
-		System.out.println("inside destroy method");
+		System.out.println("inside Samosa destroy method");
 	}
 }

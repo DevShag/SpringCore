@@ -7,20 +7,18 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
-<contxt:annotation-config></contxt:annotation-config>
 
 <!-- this is our beans -->
-<!-- 	<bean class="com.springcore.lifecycle.Samosa" name="samosa" -->
-<!-- 	init-method="init" destroy-method="destroy"> -->
-<!-- 		<property name="price" value="10"/>	 -->
-<!-- 	</bean> -->
+<bean class="com.springcore.auto.wire.annotation.Address" name="address1">
+	<property name="street" value="Temp Street"/>
+	<property name="city" value="Delhi"/>
+</bean>
+
+
+<!-- <bean class="com.springcore.auto.wire.annotation.Emp" name="emp1" autowire="byName"/> -->
+<!-- <bean class="com.springcore.auto.wire.annotation.Emp" name="emp2" autowire="byType"/> -->
+<bean class="com.springcore.auto.wire.annotation.Emp" name="emp3"/>
 	
-<!-- 	<bean class="com.springcore.lifecycle.ColdDrink" name="pepsi"> -->
-<!-- 		<property name="price" value="50"/> -->
-<!-- 	</bean> -->
-	
-	<bean class="com.springcore.lifecycle.AnnotationExample" name="example">
-		<property name="subject" value="Maths"/>
-	</bean>
+
 
 </beans>
